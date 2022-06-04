@@ -6,20 +6,24 @@
 // MAIN
 
 main {
-    z-index: 1 !important;
     h1 {
         font-size: 3rem;
-    }
-    i {
-        font-size: 2.5rem;
     }
     p {
         margin: 1.5rem 0;
     } 
 }
 
+#services {
+    div {
+        margin-top: 2.5rem;
+    }
+    i {
+        font-size: 2.5rem;
+    }
+}
+
 path {
-    z-index: 0 !important;
     fill: rgb(255, 109, 96) !important;
 }
 

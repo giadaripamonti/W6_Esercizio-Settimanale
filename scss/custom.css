@@ -11957,24 +11957,23 @@ fieldset:disabled .btn {
   }
 }
 
-main {
-  z-index: 1 !important;
-}
-
 main h1, main .h1 {
   font-size: 3rem;
-}
-
-main i {
-  font-size: 2.5rem;
 }
 
 main p {
   margin: 1.5rem 0;
 }
 
+#services div {
+  margin-top: 2.5rem;
+}
+
+#services i {
+  font-size: 2.5rem;
+}
+
 path {
-  z-index: 0 !important;
   fill: #ff6d60 !important;
 }
 /*# sourceMappingURL=custom.css.map */
