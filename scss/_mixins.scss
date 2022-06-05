@@ -1,0 +1,6 @@
+@mixin dark-mode($dark-theme: true) {
+    @if $dark-theme {
+        background-color: darken($white, 75%);
+        color: lighten($black, 90%);
+    }
+}

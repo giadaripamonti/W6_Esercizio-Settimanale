@@ -1,13 +1,12 @@
 @import 'variables';
 @import 'buttons';
-@import 'functions';
+@import 'mixins';
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 
-body {
-    @include themeMode();
-    background-color: $white;
+.dark-theme {
+    @include dark-mode(true);
 }
 
 // HEADER
@@ -32,6 +31,10 @@ header {
 .navbar-brand {
     color: $orange !important;
     font-size: 3rem;
+    border: none;
+    &:hover{
+        border: none;
+    }
 }
 
 .dropdown-menu {
@@ -51,6 +54,7 @@ header {
 
 main {
     font-family: 'Poppins', sans-serif;
+    color: $gray-800;
 
     h1 {
         font-size: 3rem !important;
