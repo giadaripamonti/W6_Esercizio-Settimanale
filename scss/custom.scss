@@ -1,17 +1,76 @@
+@import 'variables';
+@import 'buttons';
+@import 'functions';
+
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+
+body {
+    @include themeMode();
+    background-color: $white;
+}
+
 // HEADER
-// visto che nel file da scaricare il menu era già a sinistra, ho voluto provare a metterlo al centro.
+/* visto che nel file da scaricare il menu era già a sinistra, ho voluto provare a metterlo al centro.
+ho inoltre modificato le icone e inserito il toggle per la modalità dark */
+
+header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 3;
+    a {
+        margin-right: 1rem;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            color: $orange !important;
+            border-bottom: 2px solid $orange;
+        }
+    }
+
+}
+
+.navbar-brand {
+    color: $orange !important;
+    font-size: 3rem;
+}
+
+.dropdown-menu {
+    border: none;
+    background-color: $light;
+}
+
+#sun, #moon {
+    color: $gray-500;
+    position: absolute;
+    top: 2.26rem;
+    right: 11rem;
+    visibility: hidden;
+}
 
 // MAIN
 
 main {
+    font-family: 'Poppins', sans-serif;
+
     h1 {
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
     p {
-        margin: 1.5rem 0;
-    } 
+        margin: 1.3rem 0;
+        font-weight: 300;
+    }
+    path {
+        fill: $yellow;
+    }
+}
+
+#first-cta {
+    div {
+        margin: 1.5rem auto;
+    }
+    img {
+        margin: 0 auto !important;
+    }
 }
 
 #services {
@@ -21,10 +80,19 @@ main {
     i {
         font-size: 2.5rem;
     }
+    path {
+        fill: $purple;
+    }
 }
 
-path {
-    fill: rgb(255, 109, 96) !important;
+#reviews {
+    margin-top: 5.5rem;
+    img {
+        margin: 2rem auto;
+    }
 }
 
 // FOOTER
+footer {
+    background-color: $yellow;
+}

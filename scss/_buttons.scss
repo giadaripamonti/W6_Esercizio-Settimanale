@@ -1,0 +1,25 @@
+button {
+    padding: 0.5rem 1rem;
+    margin: 1.5rem auto;
+    a {
+        color: $gray-100;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+#first-cta {
+    button {
+        padding:1rem 2rem;
+    }
+}
+
+// TO TOP
+
+#to-top {
+    position: sticky;
+    top: 50vh;
+    float: right;
+    font-size: 2.5rem;
+    margin: 0 1rem;
+}
