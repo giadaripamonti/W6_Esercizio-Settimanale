@@ -1,10 +1,10 @@
 @charset "UTF-8";
-button {
+button, footer > button {
   padding: 0.5rem 1rem;
   margin: 1.5rem auto;
 }
 
-button a {
+button a, footer > button a {
   color: #f8f9fa;
   text-decoration: none;
   text-transform: uppercase;
@@ -12021,12 +12021,8 @@ header a:hover {
   background-color: #f8f9fa;
 }
 
-#sun, #moon {
+#contrast {
   color: #adb5bd;
-  position: absolute;
-  top: 2.26rem;
-  right: 11rem;
-  visibility: hidden;
 }
 
 main {
@@ -12077,5 +12073,39 @@ main path {
 
 footer {
   background-color: #ffbe5c;
+}
+
+footer div {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+footer div h6, footer div .h6 {
+  color: #495057 !important;
+}
+
+footer div li {
+  color: #6c757d !important;
+  font-size: 0.8rem !important;
+  line-height: 1.2;
+}
+
+footer div li a:hover {
+  text-decoration: underline;
+}
+
+footer div p {
+  color: #6c757d !important;
+  font-size: 0.8rem;
+}
+
+footer p:last-child {
+  color: #6c757d;
+  font-size: 0.5rem;
+  margin: 0 auto;
+}
+
+footer i {
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=custom.css.map */
